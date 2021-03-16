@@ -7,7 +7,7 @@ if(isset($_POST['btnlogin'])){
     
     if($uname=="admin" && $password=="1234")
     {
-        header('location:weather.php');
+        header('location:weather.html');
     }
     else
     {
