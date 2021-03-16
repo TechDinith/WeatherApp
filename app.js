@@ -43,7 +43,7 @@ var button1= document.querySelector('.submit1');
 
 
 window.onload=function(){
-  fetch('api.openweathermap.org/data/2.5/weather?q=colombo&units=metric&appid=f2aac9bffa3a1ad1208bfcd8cc8f7c72')
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=colombo&units=metric&appid=f2aac9bffa3a1ad1208bfcd8cc8f7c72')
   .then(response => response.json())
   .then(data => {
     var tempValue = data['main']['temp'];
@@ -67,7 +67,7 @@ window.onload=function(){
 
 
 button.addEventListener('click', function(name){
-fetch('api.openweathermap.org/data/2.5/weather?q='+input.value+'&units=metric&appid=f2aac9bffa3a1ad1208bfcd8cc8f7c72')
+fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&units=metric&appid=f2aac9bffa3a1ad1208bfcd8cc8f7c72')
 .then(response => response.json())
 .then(data => {
   var tempValue = data['main']['temp'];
@@ -91,7 +91,7 @@ fetch('api.openweathermap.org/data/2.5/weather?q='+input.value+'&units=metric&ap
 })
 
 button1.addEventListener('click', function(name){
-  fetch('api.openweathermap.org/data/2.5/weather?lat='+input1.value+'&lon='+input2.value+'&units=metric&appid=f2aac9bffa3a1ad1208bfcd8cc8f7c72')
+  fetch('https://api.openweathermap.org/data/2.5/weather?lat='+input1.value+'&lon='+input2.value+'&units=metric&appid=f2aac9bffa3a1ad1208bfcd8cc8f7c72')
   
   .then(response => response.json())
   .then(data => {
