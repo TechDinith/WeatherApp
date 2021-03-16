@@ -7,13 +7,13 @@ if(isset($_POST['btnlogin'])){
     
     if($uname=="admin" && $password=="1234")
     {
-        header('location:weather.html');
+        header('location:weather.php');
     }
     else
     {
         echo "<SCRIPT> 
         alert('Invalid Credentials..!')
-        window.location.replace('index.html');
+        window.location.replace('index.php');
     </SCRIPT>";
  }
         
